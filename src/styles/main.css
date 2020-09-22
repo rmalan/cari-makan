@@ -82,3 +82,33 @@ body {
     color: #07689f;
     box-shadow: 0px 2px 0px #07689f;
 }
+
+/* hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/heros/hero-image.jpg");
+    background-position: center;
+    background-color: #ffc93c;
+}
+
+.hero-inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero-title {
+    color: #f5f5f5;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero-tagline {
+    color: #e0dede;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
