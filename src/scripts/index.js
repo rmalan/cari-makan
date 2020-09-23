@@ -13,9 +13,8 @@ function getRestaurants(data) {
                     src="${restaurant.pictureId}",
                     alt="${restaurant.name}">
                 <div class="post-item-content">
-                    <p class="post-item-date">About 10 Hours Ago By <a href="#" class="post-item-date-author">Aditya
-                        Tri Nugroho</a>
-                    </p>
+                    <p class="post-item-rating"><i class="fas fa-star"></i> ${restaurant.rating}</p>
+                    <p class="post-item-location"><i class="fas fa-map-marker-alt"></i> ${restaurant.city}</p>
                     <h1 class="post-item-title"><a href="#">${restaurant.name}</a>
                     </h1>
                     <p class="post-item-description">${restaurant.description}</p>

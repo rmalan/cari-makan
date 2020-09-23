@@ -181,15 +181,16 @@ main {
     object-fit: cover;
 }
 
-.post-item-date {
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #999;
+.post-item-rating {
+    display: inline;
+    font-size: 11px;
+    color: #cf7500;
+    margin-right: 5px;
 }
 
-.post-item-date-author {
-    color: red;
-    text-decoration: none;
+.post-item-location {
+    font-size: 11px;
+    display: inline;
 }
 
 .post-item-title {
@@ -200,7 +201,8 @@ main {
 }
 
 .post-item-title:hover {
-    opacity: 0.5;
+    color: #07689f;
+    box-shadow: 1px 0px #07689f;
 }
 
 .post-item-title a {
