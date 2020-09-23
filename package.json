@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-apps",
+  "name": "cari-makan",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yuk cari tempat makan terdekat",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
