@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -91,7 +92,8 @@ body {
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/heros/hero-image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../public/images/heros/hero-image.jpg");
     background-position: center;
     background-color: #ffc93c;
 }
@@ -139,14 +141,14 @@ main {
 }
 
 .explore-label::before {
-    content: '';
+    content: "";
     margin-bottom: 16px;
     display: block;
     border-bottom: 1px solid #07689f;
 }
 
 .explore-label::after {
-    content: '';
+    content: "";
     margin-top: 16px;
     display: block;
     border-bottom: 1px solid #07689f;
@@ -175,6 +177,8 @@ main {
 
 .post-item-thumbnail {
     width: 100%;
+    max-height: 225px;
+    object-fit: cover;
 }
 
 .post-item-date {
@@ -205,6 +209,11 @@ main {
 }
 
 .post-item-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     margin-top: 16px;
     font-size: 12px;
     line-height: 1.5em;
@@ -223,7 +232,6 @@ footer p {
     color: #07689f;
     font-size: 14px;
 }
-
 
 @media screen and (min-width: 650px) {
     .post-item-content {
