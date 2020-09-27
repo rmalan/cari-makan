@@ -26,7 +26,7 @@ function getRestaurants(data) {
         restaurants += `
             <article class="post-item">
                 <img class="post-item-thumbnail"
-                    src="${restaurant.pictureId}",
+                    src="${restaurant.pictureId}"
                     alt="${restaurant.name}">
                 <div class="post-item-content">
                     <p class="post-item-rating"><i class="fas fa-star"></i> ${restaurant.rating}</p>

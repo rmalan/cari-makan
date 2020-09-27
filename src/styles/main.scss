@@ -77,7 +77,7 @@ html {
 		color: #40a8c4;
 		&:hover {
 			color: #07689f;
-			box-shadow: 0px 2px 0px #07689f;
+			box-shadow: 0 2px #07689f;
 		}
 	}
 }
@@ -171,7 +171,7 @@ main {
 /* post-item */
 .post-item {
 	background-color: white;
-	box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px rgba(0, 0, 0, 0.2);
 	width: 100%;
 	border-radius: 5px;
 	overflow: hidden;
@@ -201,7 +201,7 @@ main {
 	transition: 0.3s opacity;
 	&:hover {
 		color: #07689f;
-		box-shadow: 1px 0px #07689f;
+		box-shadow: 1px 0 #07689f;
 	}
 	a {
 		text-decoration: none;
@@ -225,7 +225,7 @@ footer {
 	padding: 1.3em;
 	width: 100%;
 	text-align: center;
-	box-shadow: 0px -2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 -2px rgba(0, 0, 0, 0.2);
 	p {
 		color: #07689f;
 		font-size: 14px;
