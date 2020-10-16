@@ -3,10 +3,9 @@ import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-  constructor({ menu, drawer, hero, content }) {
+  constructor({ menu, drawer, content }) {
     this._menu = menu;
     this._drawer = drawer;
-    this._hero = hero;
     this._content = content;
 
     this._initialAppShell();
@@ -16,7 +15,6 @@ class App {
     DrawerInitiator.init({
       menu: this._menu,
       drawer: this._drawer,
-      hero: this._hero,
       content: this._content,
     });
   }

@@ -6,7 +6,6 @@ import swRegister from './utils/sw-register';
 const app = new App({
   menu: document.querySelector('#menu'),
   drawer: document.querySelector('#drawer'),
-  hero: document.querySelector('#hero'),
   content: document.querySelector('#main-content'),
 });
 
