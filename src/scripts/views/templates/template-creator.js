@@ -81,4 +81,21 @@ const createRestaurantDetailsTemplate = (restaurant) => `
   </div>
 `;
 
-export { createRestaurantItemTemplate, createRestaurantDetailsTemplate };
+const createLikeButtonTemplate = () => `
+  <button aria-label="like this restaurant" id="like-button" class="like">
+    <i class="far fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
+const createLikedButtonTemplate = () => `
+  <button aria-label="unlike this restaurant" id="like-button" class="like">
+    <i class="fas fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
+export {
+  createRestaurantItemTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
+  createRestaurantDetailsTemplate,
+};
