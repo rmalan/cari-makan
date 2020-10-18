@@ -12,6 +12,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "allowAfterThis": true
+        "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        "no-restricted-globals": "warn"
     }
 }
