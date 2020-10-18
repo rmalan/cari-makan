@@ -8,7 +8,7 @@ const createRestaurantItemTemplate = (restaurant) => `
           ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
           : 'https://image.freepik.com/free-vector/error-404-concept-landing-page_52683-18367.jpg'
       }"
-      alt="${restaurant.name}">
+      alt="${restaurant.name}" crossorigin="anonymous">
     <div class="restaurant-card-body">
       <p class="restaurant-card-rating"><i class="fas fa-star"></i> ${restaurant.rating}</p>
       <p class="restaurant-card-location"><i class="fas fa-map-marker-alt"></i> ${restaurant.city}</p>
@@ -27,7 +27,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
         ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
         : 'https://image.freepik.com/free-vector/error-404-concept-landing-page_52683-18367.jpg'
     }"
-    alt="${restaurant.name}">
+    alt="${restaurant.name}" crossorigin="anonymous">
     <div class="restaurant-details-content">
       <p class="restaurant-details-rating"><i class="fas fa-star"></i> ${restaurant.rating}</p>
       <p class="restaurant-details-location"><i class="fas fa-map-marker-alt"></i> ${restaurant.address}, ${restaurant.city}</p>
