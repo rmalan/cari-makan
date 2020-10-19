@@ -1,6 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import DicodingRestaurantAPISource from '../../data/dicoding-restaurant-api-source';
-import { createRestaurantDetailsTemplate, createLikeButtonTemplate } from '../templates/template-creator';
+import { createRestaurantDetailsTemplate } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
@@ -14,7 +14,7 @@ const Detail = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const restaurant = await DicodingRestaurantAPISource.restaurantDetails(url.id);
-  
+
     const restaurantContainer = document.querySelector('#restaurant');
     restaurantContainer.innerHTML = createRestaurantDetailsTemplate(restaurant);
     console.log(restaurant);
@@ -28,7 +28,7 @@ const Detail = {
         pictureId: restaurant.pictureId,
         city: restaurant.city,
         rating: restaurant.rating,
-      }
+      },
     });
   },
 };

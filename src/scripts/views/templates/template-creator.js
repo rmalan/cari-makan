@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import CONFIG from '../../globals/config';
 
 const createRestaurantItemTemplate = (restaurant) => `
@@ -37,7 +38,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
         .map(
           (category) => `
               <p class="restaurant-details-category">${category.name}</p>
-            `
+            `,
         )
         .join('')}
       <h3 class="restaurant-details-sub-title">Menu</h3>
@@ -48,7 +49,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
             .map(
               (food) => `
                   <p class="menu-list">${food.name}</p>
-                `
+                `,
             )
             .join('')}
         </div>
@@ -58,7 +59,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
             .map(
               (drink) => `
                   <p class="menu-list">${drink.name}</p>
-                `
+                `,
             )
             .join('')}
         </div>
@@ -73,7 +74,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
                   <p class="review">${review.review}</p>
                   <small class="date"><i class="far fa-clock"></i> ${review.date}</small>
                 </div>
-              `
+              `,
           )
           .join('')}
       </div>
