@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-restaurant-idb';
 
@@ -73,8 +72,7 @@ describe('Liking A Restaurant', () => {
     FavoriteRestaurantIdb.deleteRestaurant(1);
   });
 
-  // menggunakan metode xit, bukan it
-  xit('should not add a restaurant when it has no id', async () => {
+  it('should not add a restaurant when it has no id', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#like-button-container'),
       restaurant: {},
