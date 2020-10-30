@@ -66,7 +66,7 @@ const createRestaurantDetailsTemplate = (restaurant) => `
       </div>
       <h3 class="restaurant-details-sub-title">Ulasan Pelanggan</h3>
       <div class="restaurant-review">
-        ${restaurant.consumerReviews
+        ${restaurant.customerReviews
           .map(
             (review) => `
                 <div class="review-container">
