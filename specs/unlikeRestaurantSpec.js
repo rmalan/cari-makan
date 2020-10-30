@@ -1,6 +1,5 @@
-/* eslint-disable no-undef */
-import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-restaurant-idb';
+import * as TestFactories from './helpers/testFactories';
 
 const addLikeButtonContainer = () => {
   document.body.innerHTML = '<div id="like-button-container"></div>';
@@ -17,12 +16,7 @@ describe('Unliking A Restaurant', () => {
   });
 
   it('should display unlike widget when the restaurant has been liked', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#like-button-container'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="unlike this restaurant"]'),
@@ -30,12 +24,7 @@ describe('Unliking A Restaurant', () => {
   });
 
   it('should not display like widget when the restaurant has been liked', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#like-button-container'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="like this restaurant"]'),
@@ -43,12 +32,7 @@ describe('Unliking A Restaurant', () => {
   });
 
   it('should be able to remove liked restaurant from the list', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#like-button-container'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     document
       .querySelector('[aria-label="unlike this restaurant"]')
@@ -58,12 +42,7 @@ describe('Unliking A Restaurant', () => {
   });
 
   it('should not throw error if the unliked restaurant is not in the list', async () => {
-    await LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#like-button-container'),
-      restaurant: {
-        id: 1,
-      },
-    });
+    await TestFactories.createLikeButtonPresenterWithRestaurant({ id: 1 });
 
     // hapus dulu film dari daftar film yang disukai
     await FavoriteRestaurantIdb.deleteRestaurant(1);

@@ -1,7 +1,7 @@
 import UrlParser from '../../routes/url-parser';
 import DicodingRestaurantAPISource from '../../data/dicoding-restaurant-api-source';
 import { createRestaurantDetailsTemplate } from '../templates/template-creator';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 
 const Detail = {
   async render() {
