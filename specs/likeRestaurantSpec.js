@@ -20,7 +20,7 @@ describe('Liking A Restaurant', () => {
     });
 
     expect(
-      document.querySelector('[aria-label="like this restaurant"]')
+      document.querySelector('[aria-label="like this restaurant"]'),
     ).toBeTruthy();
   });
 
@@ -33,7 +33,7 @@ describe('Liking A Restaurant', () => {
     });
 
     expect(
-      document.querySelector('[aria-label="unlike this restaurant"]')
+      document.querySelector('[aria-label="unlike this restaurant"]'),
     ).toBeFalsy();
   });
 
