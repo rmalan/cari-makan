@@ -1,10 +1,12 @@
 /* eslint-disable indent */
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant-card">
-    <img class="restaurant-card-thumbnail"
-      src="${
+    <img class="restaurant-card-thumbnail lazyload"
+      data-src="${
         restaurant.pictureId
           ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
           : 'https://image.freepik.com/free-vector/error-404-concept-landing-page_52683-18367.jpg'
