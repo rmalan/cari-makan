@@ -6,6 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "build-image": "node sharp.js",
     "test": "karma start",
     "e2e": "codeceptjs run --steps"
   },
@@ -37,6 +38,7 @@
     "puppeteer": "^5.4.1",
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
+    "sharp": "^0.26.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",

@@ -104,7 +104,7 @@ html {
   margin-top: 3px;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../public/images/heros/hero-image.jpg');
+    url('../public/hero-image/hero-image-large.jpg');
   background-position: center;
   background-color: #ffc93c;
 }
@@ -386,6 +386,10 @@ footer {
     border-bottom: 1px solid #e0e0e0;
     width: 100%;
     text-align: left;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../public/hero-image/hero-image-small.jpg');
   }
 }
 @media screen and (min-width: 500px) {
