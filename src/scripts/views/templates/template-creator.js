@@ -1,11 +1,27 @@
 /* eslint-disable indent */
 import CONFIG from '../../globals/config';
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+const createSkeletonRestaurantTemplate = (count) => {
+  let template = '';
+
+  for (let i = 0; i < count; i += 1) {
+    template += `
+      <div class="restaurant-card">
+        <img class="restaurant-card-thumbnail" height="200px" src="./images/placeholder.png" alt="skeleton">
+        <div class="restaurant-card-body">
+          <h1 class="skeleton">Lorem ipsum dolor sit.</a></h3>
+          <p class="skeleton">Lorem ipsum dolor sit adipisicing. Saepe reprehenderit magnam deserunt quibusdam explicabo.</p>
+        </div>
+      </div>
+    `;
+  }
+  return template;
+};
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant-card">
-    <img class="restaurant-card-thumbnail lazyload"
+    <img class="restaurant-card-thumbnail lazyload" height="200px"
+      src="./images/placeholder.png"
       data-src="${
         restaurant.pictureId
           ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId
@@ -97,6 +113,7 @@ const createUnlikeRestaurantButtonTemplate = () => `
 `;
 
 export {
+  createSkeletonRestaurantTemplate,
   createRestaurantItemTemplate,
   createLikeRestaurantButtonTemplate,
   createUnlikeRestaurantButtonTemplate,
